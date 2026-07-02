@@ -1,17 +1,17 @@
 //Nav Bar
-document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
-  const menuToggle = document.getElementById('navbarNav');
-  const bsCollapse = menuToggle ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+//   const menuToggle = document.getElementById('navbarNav');
+//   const bsCollapse = menuToggle ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
 
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      if (menuToggle && menuToggle.classList.contains('show')) {
-        bsCollapse.hide();
-      }
-    });
-  });
-});
+//   navLinks.forEach((link) => {
+//     link.addEventListener('click', () => {
+//       if (menuToggle && menuToggle.classList.contains('show')) {
+//         bsCollapse.hide();
+//       }
+//     });
+//   });
+// });
 
 // Simple Contact Form Handling
 document.getElementById('contactForm').addEventListener('submit', function(e) {
