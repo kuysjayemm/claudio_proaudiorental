@@ -1,0 +1,50 @@
+/* Color Palette Customization */
+:root {
+  --primary-color: #0d6efd; /* Strong blue accent color matching text styles */
+  --dark-bg: #111111;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  scroll-behavior: smooth;
+  color: #333;
+}
+
+/* Custom Nav Styling */
+.navbar {
+  transition: all 0.3s ease;
+}
+.nav-link {
+  font-weight: 500;
+  color: #444 !important;
+}
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Hero Background (Overlay styling) */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), 
+              url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1200') no-repeat center center/cover;
+  min-height: 85vh;
+}
+
+/* Accent design details */
+.heading-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.icon-box i {
+  color: var(--primary-color);
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
